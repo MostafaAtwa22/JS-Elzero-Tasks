@@ -1,0 +1,1 @@
+document.writeln("<h1>Elzero</h1>");

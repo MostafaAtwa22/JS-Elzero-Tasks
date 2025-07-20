@@ -1,0 +1,1 @@
+console.log("This is Task1[1-9]/script.js");

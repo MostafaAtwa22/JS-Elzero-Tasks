@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Learn JavaScript</title>
+    <script>
+      // Code One : Not Working because the element is not loaded yet
+      document.getElementById("el").style.color = "red";
+    </script>
+    <script>
+      // Code Two : Working because the element is loaded after the script is executed
+      window.onload = function () {
+        document.getElementById("el").style.color = "red";
+      };
+    </script>
+  </head>
+  <body>
+    <h1 id="el">Page Title</h1>
+    <script>
+      // Code Three: Works because it's after the element 
+      document.getElementById("el").style.color = "red";
+    </script>
+  </body>
+</html>
